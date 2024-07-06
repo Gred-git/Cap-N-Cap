@@ -1,6 +1,8 @@
+/* Navbar.css */
+
 .navbar {
   position: fixed;
-  left: -250px;
+  left: -250px; /* Off-screen initially */
   top: 0;
   bottom: 0;
   width: 250px;
@@ -9,7 +11,7 @@
 }
 
 .navbar.open {
-  left: 0;
+  left: 0; /* Slide in when open */
 }
 
 .menu-button {
@@ -23,13 +25,14 @@
 }
 
 .navbar-menu {
-  margin-top: 50px;
+  margin-top: 150px;
   padding: 0;
   list-style-type: none;
 }
 
 .navbar-menu ul li {
   padding: 10px;
+  justify-content: left;
 }
 
 .navbar-menu ul li a {

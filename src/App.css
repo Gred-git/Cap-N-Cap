@@ -1,3 +1,5 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.open-navbar-button {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  padding-bottom: 30px;
+}
+
+.menu-icon {
+  width: 75px;
+  height: 9px;
+  background-color: #000;
+  margin: 15px;
+
 }
