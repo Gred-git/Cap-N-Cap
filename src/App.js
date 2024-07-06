@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Search from './Search';
 import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
-import { isContentEditable } from '@testing-library/user-event/dist/utils';
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -34,11 +32,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="Search"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Gallery
         </a>
       </header>
     </div>

@@ -1,0 +1,31 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column {
+    float: left;
+    width: 25%; /* Arrange into 4 columns */
+  }
+  
+  .column input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .column label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  
+  /* Clear floats after the columns */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
