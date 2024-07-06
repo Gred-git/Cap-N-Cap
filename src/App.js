@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
+import Search from './Search';
+import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
+import { isContentEditable } from '@testing-library/user-event/dist/utils';
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -24,7 +27,7 @@ function App() {
     
 
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={sprayCanIcon} className="App-logo" alt="logo" />
         
         <p>
           Welcome to Cap N' Can
