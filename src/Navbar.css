@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #333;
+  transition: left 0.3s ease;
+}
+
+.navbar.open {
+  left: 0;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  margin-top: 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar-menu ul li {
+  padding: 10px;
+}
+
+.navbar-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu ul li a:hover {
+  text-decoration: underline;
+}
