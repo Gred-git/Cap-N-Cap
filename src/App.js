@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route } from 'react-router-dom';
+
 import './App.css';
 
 import Search from './Search';
@@ -6,14 +9,19 @@ import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
 
 function App() {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
 
-
   return (
+
+    <BrowserRouter>
+
+    <Route exact path="/" component={App} />
+    <Route path="/search" component={Search} />
+
     <div className="App">
 
       <button className="open-navbar-button" onClick={toggleNavbar}>
@@ -40,6 +48,7 @@ function App() {
         </a>
       </header>
     </div>
+    </BrowserRouter>
   );
 }
 

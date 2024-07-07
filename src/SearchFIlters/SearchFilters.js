@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchFilters.css'; 
 
-const RadioButtonContainer = () => {
+const SearchFilters = () => {
   return (
     <div className="container">
       <div className="column">

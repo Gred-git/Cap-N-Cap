@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchFilters from './SearchFilters/SearchFilters.js';
+import SearchFilters from './SearchFIlters/SearchFilters.js';
 
 const Search = () => {
   return (
