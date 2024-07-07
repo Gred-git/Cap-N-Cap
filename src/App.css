@@ -28,6 +28,18 @@
   padding: 20px 0;
 }
 
+.forum-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+}
+
 .featured-header {
   background-color: #282c34;
   align-items: center;

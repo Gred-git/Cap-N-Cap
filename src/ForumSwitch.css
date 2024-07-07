@@ -1,26 +1,20 @@
 .forum-switch {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .switch-button {
-  background-color: #ccc;
+  background-color: #007bff;
+  color: white;
   border: none;
-  color: #333;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  outline: none;
   border-radius: 20px;
-  transition: background-color 0.3s ease;
+  margin-right: 10px;
 }
 
 .switch-button.active {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-.switch-spacing {
-  width: 10px; 
+  background-color: #0056b3;
 }

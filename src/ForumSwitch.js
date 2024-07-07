@@ -1,27 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ForumSwitch.css';
 
-const ForumSwitch = () => {
-  const [isActive, setIsActive] = useState(true);
-
-  const toggleSwitch = () => {
-    setIsActive(!isActive);
+const ForumSwitch = ({ activeState, onStateChange }) => {
+  const handleClick = (state) => {
+    onStateChange(state);
   };
 
   return (
     <div className="forum-switch">
       <button
-        className={`switch-button ${isActive ? 'active' : ''}`}onClick={toggleSwitch}
+        className={`switch-button ${activeState === 'Forums' ? 'active' : ''}`}
+        onClick={() => handleClick('Forums')}
       >
         Forums
       </button>
-
-      <div className="switch-spacing"></div> 
-
       <button
-        className={`switch-button ${isActive ? '' : 'active'}`}onClick={toggleSwitch}
+        className={`switch-button ${activeState === 'QAs' ? 'active' : ''}`}
+        onClick={() => handleClick('QAs')}
       >
-        Q/A
+        Q/As
       </button>
     </div>
   );
