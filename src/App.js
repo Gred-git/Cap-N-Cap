@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import './App.css';
 import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
+import GalleryBox from './GalleryBox.js';
+import GalleryContainer from './GalleryContainer'; 
+import CrazyButton from './CrazyButton';
+import SearchFilters from './SearchFIlters/SearchFilters.js';
 
 function App() {
 
@@ -10,6 +14,103 @@ function App() {
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
+
+
+  const galleryItems = [
+    {
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },
+    {
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    },{
+      title: 'Artwork 1',
+      imageUrl: 'artwork1.jpg',
+      tags: ['Abstract', 'Oil Painting', 'Modern'],
+      artist: 'John Doe'
+    }
+  ];
+
 
   return (
 
@@ -28,17 +129,23 @@ function App() {
         <p>
           Welcome to Cap N' Can
         </p>
-        <a
-          className="App-link"
-          href="Search"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gallery
-        </a>
+        <CrazyButton buttonText="Upload" />
+
+        <SearchFilters />
+      </header>
+
+      <header className="featured-header">
+        <p>
+          ↓↓↓ Catch up on last weeks challenge submissions   ↓↓↓
+        </p>
+        <p>
+          Current theme: The React Logo !
+        </p>
+        <GalleryContainer galleryItems={galleryItems} />
       </header>
 
     </div>
+
   );
 }
 
