@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Outlet } from 'react-router-dom';
 
 import './Navbar.css';
 
 import Search from './Search';
+import Challenges from './Challenges';
+import Forums from './Forums';
 import App from './App';
+import About from './About';
+import Home from './Home';
 
 const Navbar = ({ isOpen, toggleNavbar }) => {
 
   return (
-
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
       <button className="menu-button" onClick={toggleNavbar}>
       </button>
@@ -18,18 +21,14 @@ const Navbar = ({ isOpen, toggleNavbar }) => {
       <nav className="navbar-menu">
 
         <ul>
-          <li><Link to="/About">About</Link></li>
-          <li><Link to="/Search">Search</Link></li>
-          <li><Link to="/Challenges">Challenges</Link></li>
-          <li><Link to="/Forums">Forums</Link></li>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/search">Search</Link></li>
+          <li><Link to="/challenges">Challenges</Link></li>
+          <li><Link to="/forums">Forums</Link></li>
         </ul>
       </nav>
-
-      <Route exact path="/" component={App} />
-      <Route path="/Search" component={Search} />
-      <Route path="/About" component={About} />
-      <Route path="/Challenges" component={Challenges} />
-      <Route path="/Forums" component={Forums} />
+      <Outlet />
 
     </div>
   );

@@ -5,6 +5,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 import Search from './Search';
+import Challenges from './Challenges';
+import Forums from './Forums';
+import About from './About';
+import Home from './Home';
+
 import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
 
@@ -16,11 +21,6 @@ function App() {
   };
 
   return (
-
-    <BrowserRouter>
-
-    <Route exact path="/" component={App} />
-    <Route path="/search" component={Search} />
 
     <div className="App">
 
@@ -34,7 +34,6 @@ function App() {
 
       <header className="App-header">
         <img src={sprayCanIcon} className="App-logo" alt="logo" />
-        
         <p>
           Welcome to Cap N' Can
         </p>
@@ -47,8 +46,8 @@ function App() {
           Gallery
         </a>
       </header>
+
     </div>
-    </BrowserRouter>
   );
 }
 
