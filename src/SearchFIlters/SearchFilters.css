@@ -17,7 +17,8 @@
 .column {
   width: 20%;
   float: left;
-  padding-right: 20px; 
+  padding-right: 20px;
+  padding-left: 20px; 
   position: relative;
 }
 
@@ -36,13 +37,42 @@
 }
 
 .column input[type="radio"] {
-  margin-right: 10px;
+  display: none;
 }
 
 .column label {
+  position: relative;
   display: block;
-  margin-bottom: 8px;
-  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  color: #666;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.column label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.column input[type="radio"]:checked + label {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.column input[type="radio"]:checked + label::before {
+  background-color: #fff;
 }
 
 .filter-title {
@@ -59,4 +89,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 15px;
+  background-color: #4CAF50;
+}
+
+.column select option:checked {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.column select option {
+  background-color: #fff;
+  color: #000;
+}
+
+.column select option[value="None"] {
+  background-color: #fff; 
+  color: #000; 
 }

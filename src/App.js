@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import './App.css';
 import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
-import GalleryBox from './GalleryBox.js';
 import GalleryContainer from './GalleryContainer'; 
 import CrazyButton from './CrazyButton';
 import SearchFilters from './SearchFIlters/SearchFilters.js';
+import ForumSwitch from './ForumSwitch';
+import ForumButtons from './ForumButtons';
+
 
 function App() {
 
@@ -132,6 +134,8 @@ function App() {
         <CrazyButton buttonText="Upload" />
 
         <SearchFilters />
+        <ForumButtons />
+        <ForumSwitch />
       </header>
 
       <header className="featured-header">

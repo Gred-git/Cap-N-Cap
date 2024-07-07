@@ -1,35 +1,37 @@
 import React from 'react';
 import './SearchFilters.css'; 
 
-const SearchFilters = () => {
+  
+  const SearchFilters = () => {
+
   return (
     <div className="container">
       <div className="column">
         <p className="filter-title">Location:</p>
         <input type="radio" id="option1" name="group1" />
-        <label htmlFor="option1">Option 1</label><br />
+        <label htmlFor="option1">NA</label><br />
         <input type="radio" id="option2" name="group1" />
-        <label htmlFor="option2">Option 2</label><br />
+        <label htmlFor="option2">EU</label><br />
         <input type="radio" id="option3" name="group1" />
-        <label htmlFor="option3">Option 3</label><br />
+        <label htmlFor="option3">Global</label><br />
       </div>
       <div className="column">
         <p className="filter-title">Style:</p>
         <input type="radio" id="option4" name="group2" />
-        <label htmlFor="option4">Option 4</label><br />
+        <label htmlFor="option4">Tags</label><br />
         <input type="radio" id="option5" name="group2" />
-        <label htmlFor="option5">Option 5</label><br />
+        <label htmlFor="option5">Pieces</label><br />
         <input type="radio" id="option6" name="group2" />
-        <label htmlFor="option6">Option 6</label><br />
+        <label htmlFor="option6">Throw-Ups</label><br />
       </div>
       <div className="column">
         <p className="filter-title">Technique:</p>
         <input type="radio" id="option7" name="group3" />
-        <label htmlFor="option7">Option 7</label><br />
+        <label htmlFor="option7">Freehand</label><br />
         <input type="radio" id="option8" name="group3" />
-        <label htmlFor="option8">Option 8</label><br />
+        <label htmlFor="option8">Stencil</label><br />
         <input type="radio" id="option9" name="group3" />
-        <label htmlFor="option9">Option 9</label><br />
+        <label htmlFor="option9">Mixed-Media</label><br />
       </div>
       <div className="column">
         <p className="filter-title">Challenge:</p>
