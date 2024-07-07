@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
-
-import Search from './Search';
-import Challenges from './Challenges';
-import Forums from './Forums';
-import About from './About';
-import Home from './Home';
-
 import sprayCanIcon from './images/spray-can-icon.png';
 import Navbar from './Navbar';
 

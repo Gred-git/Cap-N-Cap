@@ -1,15 +1,6 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Link, Outlet } from 'react-router-dom';
-
 import './Navbar.css';
 
-import Search from './Search';
-import Challenges from './Challenges';
-import Forums from './Forums';
-import App from './App';
-import About from './About';
-import Home from './Home';
 
 const Navbar = ({ isOpen, toggleNavbar }) => {
 
@@ -21,14 +12,13 @@ const Navbar = ({ isOpen, toggleNavbar }) => {
       <nav className="navbar-menu">
 
         <ul>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/search">Search</Link></li>
-          <li><Link to="/challenges">Challenges</Link></li>
-          <li><Link to="/forums">Forums</Link></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Challenges</a></li>
+          <li><a href="#">Forums</a></li>
         </ul>
       </nav>
-      <Outlet />
 
     </div>
   );
